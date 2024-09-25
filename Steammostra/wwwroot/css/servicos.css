@@ -1,0 +1,195 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin-top: 10px;
+}
+
+    .navbar img {
+        height: 50px;
+        margin-left: -250px
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+        margin-right: -250px;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://img.freepik.com/fotos-gratis/as-pessoas-andam-na-praia-de-ouro-com-palmeiras-antes-da-agua-turquesa_1304-5400.jpg?t=st=1725914631~exp=1725918231~hmac=4c06a70efa6e45651fc5ca43d71d531831b02f060116bb69dcee0fc0539a8b37&w=826');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+    .banner h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+        margin: 10px 0 0;
+    }
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .services h2 {
+        margin: 20px 0;
+    }
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+    .carousel-button.prev {
+        left: 10px;
+    }
+
+    .carousel-button.next {
+        right: 10px;
+    }
+
+    .carousel-button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+.testimonials {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    .testimonials h3 {
+        margin-top: 0;
+    }
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .contact-form button {
+        background-color: #daa37f;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .contact-form button:hover {
+            background-color: #b2bd56;
+        }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+    .card h3 {
+        margin-top: 0;
+    }

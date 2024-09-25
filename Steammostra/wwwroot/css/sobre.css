@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin-top: 10px;
+}
+
+    .navbar img {
+        height: 50px;
+        margin-left: -250px
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+        margin-right: -250px;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
+
+/* Banner */
+#about-banner {
+    background-image: url('https://img.freepik.com/fotos-gratis/casal-de-idosos-morando-em-nova-york_23-2150820134.jpg?t=st=1725656284~exp=1725659884~hmac=d85eebf232a13204adcbc52a649510eb8f7e6b28fe3cd96f821c3f512d7deaef&w=1480');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 2110px;
+    height: 450px;
+    background-color: aqua;
+    margin-top: 30px;
+
+    margin-top: 30px;
+    margin-left: -300px
+}
+
+    #about-banner .banner-content {
+        text-align: center;
+    }
+
+    #about-banner h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+/* Texto sobre nós */
+#about-text {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+    #about-text .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #about-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+/* Subtítulo */
+#about-subtitle {
+    padding: 2rem;
+    
+}
+
+    #about-subtitle .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #about-subtitle h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #about-subtitle p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+/* Rodapé */
+footer {
+    background-color: #201D14;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 28px;
+}

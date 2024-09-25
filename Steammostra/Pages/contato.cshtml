@@ -1,0 +1,49 @@
+@page
+@model Steammostra.Pages.CreateModel
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="~/css/contato.css" />
+
+</head>
+<div class="navbar">
+    <img src="~/imagens/LOGOOFC.png" alt="Logo">
+    <div class="nav-links">
+        <a href="/home">Inicio</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/Serviços">Serviços</a>
+        <a href="/contato">Contato</a>
+    </div>
+</div>
+<body>
+    <div class="container">
+        <h1>Contato</h1>
+        <div class="contact-info">
+            <h2>Informações de Contato</h2>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, Cidade, Estado - CEP 12345-678</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>E-mail:</strong> contato@empresaexemplo.com</p>
+        </div>
+        <div class="contact-form">
+            <h2>Formulário de Contato</h2>
+            <form action="/enviar-mensagem" method="post">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <input type="text" name="assunto" placeholder="Assunto" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <h2>Redes Sociais</h2>
+            <a href="https://facebook.com/empresaexemplo" target="_blank">Facebook</a>
+            <a href="https://instagram.com/empresaexemplo" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/company/empresaexemplo" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+    
+</body>
+</html>

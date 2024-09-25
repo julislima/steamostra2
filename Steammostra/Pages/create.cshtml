@@ -1,0 +1,83 @@
+﻿@page
+@model Steammostra.Pages.CreateModel
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="~/css/create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="loginTitle">Login</h1>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <div class="social-icons">
+                <p>Ou entre com:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>Não tem uma conta? <a href="#" id="showRegister">Cadastre-se</a></p>
+        </form>
+
+        <h1 id="registerTitle" style="display:none;">Cadastro</h1>
+        <form id="registerForm" style="display:none;" onsubmit="handleRegister(event)">
+            <input type="text" placeholder="Usuário" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+            <div class="social-icons">
+                <p>Ou cadastre-se com:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>Já tem uma conta? <a href="#" id="showLogin">Login</a></p>
+        </form>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const showRegister = document.getElementById('showRegister');
+        const showLogin = document.getElementById('showLogin');
+        const loginTitle = document.getElementById('loginTitle');
+        const registerTitle = document.getElementById('registerTitle');
+
+        showRegister.addEventListener('click', function (event) {
+            event.preventDefault();
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'block';
+            loginTitle.style.display = 'none';
+            registerTitle.style.display = 'block';
+        });
+
+        showLogin.addEventListener('click', function (event) {
+            event.preventDefault();
+            registerForm.style.display = 'none';
+            loginForm.style.display = 'block';
+            registerTitle.style.display = 'none';
+            loginTitle.style.display = 'block';
+        });
+
+        function handleLogin(event) {
+            event.preventDefault();
+            if (loginForm.checkValidity()) {
+                location.href = '/home'; // Corrigido para a rota
+            }
+        }
+
+        function handleRegister(event) {
+            event.preventDefault();
+            if (registerForm.checkValidity()) {
+                location.href = '/home'; // Corrigido para a rota
+            }
+        }
+    </script>
+</body>
+</html>

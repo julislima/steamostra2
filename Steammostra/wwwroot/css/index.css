@@ -1,0 +1,195 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url('https://img.freepik.com/fotos-gratis/mulher-de-frente-a-divertir-se-ao-ar-livre_23-2150725833.jpg?t=st=1725037124~exp=1725040724~hmac=7d478091a5c3ad3b007a78992b2a15f10ed4828e081f9c6d864810131399912a&w=1380');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    background-color: #e08d4e83; /* Cor de fundo semitransparente para o formulário */
+    border-radius: 10px;
+}
+
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form-content {
+    border: 3px solid #daa37f;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 540px;
+}
+
+.form-items {
+    width: 100%;
+    text-align: left;
+}
+
+h3 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+p {
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+    input:focus, select:focus {
+        border-color: #6C757D;
+        outline: none;
+    }
+
+.invalid-feedback {
+    color: #ff606e;
+    display: none;
+}
+
+.form-group.invalid .invalid-feedback {
+    display: block;
+}
+
+.form-group.invalid input,
+.form-group.invalid select {
+    border-color: #ff606e;
+}
+
+.form-check {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-label {
+    font-size: 15px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.play-button {
+    background-color: #daa37f;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .play-button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #b2bd56;
+    outline: none;
+}
+
+.banner {
+    display: flex;
+    align-items: flex-end; /* Alinha os itens ao fundo do contêiner */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    height: 50vh; /* Definindo altura para visualizar o alinhamento ao fundo */
+}
+
+.banner__overlay {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente para o container */
+}
+
+.banner__title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner__text {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color:white;
+}
+
+.footer {
+    background-color: #d46a1a;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
